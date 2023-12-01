@@ -1,0 +1,244 @@
+/* Home.css */
+.Home{
+  padding-bottom: 20px;
+  overflow-x: hidden; 
+}
+
+.Home-container {
+    height: 100vh;
+    position: relative;
+    
+  }
+  
+ 
+  .Home-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/assets/Homebanner.jpg');
+    background-size: cover;
+  }
+
+ 
+  .Home-background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  
+  .overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .Home-underline {
+    border: 2px solid #FFB600;
+    width: 20%;
+  }
+   
+  .Home-header-text-top {
+    font-size: 20px;
+  }
+
+  .Home-header-text-middle {
+    font-size: 60px;
+  }
+
+  .Home-header-text-bottom {
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+
+
+  
+.Home-Services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    position: absolute;
+    top: 650px;
+    width :85%;
+    left: 8%;
+  }
+  
+
+  .Home-Services {
+    width: 28%; 
+    height: 400px; 
+    background-color: #fff;
+    padding:20px;
+    margin-bottom: 20px;
+  
+  }
+  .Home-service-img{
+    width: 280px;
+    height: 196px;
+  }
+  .Home-service-button{
+    background-color: #FFB600;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+  }
+  .Home-service-background{
+    padding-top: 400px;
+    background-color: #ccc;
+  }
+  .Home-paragraph-container{
+     display: flex;
+     justify-content: center;
+     align-items: left;
+     width: 100%;
+  }
+  .Home-paragraph-flex1{
+     width:50%;
+     background-color: #fff;
+     padding: 20px;
+     padding-top: 150px;
+     text-align: left;
+     padding-left: 80px;
+  }
+  .Home-paragraph-flex2{
+    width:50%;
+    background-color: #fff;
+    padding-top: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+  }
+  .Home-paragraph-checklist{
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .Home-checklist{
+    padding-right: 10px;
+    font-size: 20px;
+    color: #FFB600;
+  }
+  .Home-paragraph-h3{
+    font-size: 15px;
+  }
+  .Home-paragraph-h1{
+    font-size: 40px;
+  }
+  .Home-paragraph-hr{
+    border: 2px solid #FFB600;
+    width: 30%;
+  
+  }
+  .checklist{
+    padding-top: 20px;
+  }
+  .Home-paragraph2-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    background-color: #FFB600;
+    border: none;
+    font-size: 15px;
+  }
+  .Home-paragraph2-img{
+    padding-left: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    .Home-header-text-bottom {
+      padding-bottom: 60px;
+    }
+    .Home-Services-container  {
+      flex-direction: column;
+    }
+  
+    .Home-Services{
+      width: 100%; 
+    }
+    .Home-service-background{
+      padding-top: 1200px;
+      background-color: #ccc;
+    }
+    .Home-paragraph-container{
+      flex-direction: column; 
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0;
+    }
+    .Home-paragraph-flex1,
+    .Home-paragraph-flex2 {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .Home-paragraph1-img{
+      width: 315px;
+      height: 296px;
+    }
+    .Home-paragraph2-img{
+       width: 315px;
+       height: 296px;
+       padding-left: 0;
+    }
+    .Home-paragraph-checklist {
+      text-align: left; 
+    }
+
+    .Home-paragraph-h1 {
+      font-size: 30px; 
+    }
+    .Home-paragraph-hr{
+      border: 2px solid #FFB600;
+      width: 100%;
+    
+    }
+  }
+  
+  
+  /* Adjustments for mobile screens */
+  @media screen and (max-width: 768px) {
+    .overlay-text {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      font-size: 16px;
+    }
+  
+    .Home-underline {
+      width: 30%;
+    }
+  
+    .Home-header-text-top {
+      font-size: 15px;
+    }
+  
+    .Home-header-text-middle {
+      font-size: 60px;
+    }
+  
+    .Home-header-text-bottom {
+      font-size: 18px;
+      font-weight: 200;
+      padding-top: 10px;
+    }
+  }
+  
