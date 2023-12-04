@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
 /* Home.css */
 .Home{
   padding-bottom: 20px;
@@ -10,7 +18,6 @@
     
   }
   
- 
   .Home-background-image {
     position: absolute;
     top: 0;
@@ -20,8 +27,6 @@
     background-image: url('/public/assets/Homebanner.jpg');
     background-size: cover;
   }
-
- 
   .Home-background-image::before {
     content: '';
     position: absolute;
@@ -31,8 +36,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
   }
-  
-  
+   
   .overlay-text {
     position: absolute;
     top: 40%;
@@ -161,13 +165,265 @@
   .Home-paragraph2-img{
     padding-left: 40px;
   }
+/*Home container black background*/
+
+ .Home-services-black-background{
+  background-color: #000;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+ .Home-service-black-container{
+  display: flex;
+  flex-Wrap: wrap;
+  padding: 30px;
+ }
+
+.Home-service-black{
+  display:flex;
+   flex: 1 1 100%;
+  justify-Content: center;
+}
+.Home-services-black-background-underline{
+  border: 2px solid #FFB600;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  color: #FFB600;
+}
+/*home help container*/
+.Home-help-container{
+  display: flex;
+  padding: 40px;
+}
+.Home-help-one{
+  background-color: #f5f5f5;
+  text-align: justify;
+  padding-left: 80px;
+  padding-right: 20px;
+  padding-top: 120px;
+}
+.Home-help-Header{
+  font-size: 15px;
+}
+.Home-Help-h1{
+  font-size: 30px;
+}
+.Home-help-h4{
+  font-size: 18px;
+  border: 2px solid #FFB600;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.Home-help-icon{
+  color: #FFB600;
+  padding-top: 5px;
+  font-size: 30px;
+}
+/* .Home-help-two{
+
+} */
+.home-help-img{
+  width: 500px;
+  height: 600px;
+}
+/*Home workshop */
+.Home-Workshop-news-container{
+  display: flex;
+  padding: 20px;
+  margin: 0;
+}
+.Home-Workshop-news{
+  width: 30%;
+  height: 500px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+}
+.Home-workshop-img{
+  width: 350px;
+  height: 200px;
+}
+.Home-Workshop-hr{
+  color: #FFB600;
+  border: 2px solid #FFB600;
+}
+.Home-workshop-button{
+  background-color: #FFB600;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  border-radius: 20px;
+  margin: 20px;
+}
+.Home-workshop-paragraph{
+  padding: 10px;
+}
+.Home-workshop-new-heading{
+  display: flex;
+  width: 100%;
+}
+.Home-workshop-heading{
+  width: 50%;
+  text-align: center;
+}
+.Home-workshop-heading1{
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+.Home-feedback-container{
+  display: flex;
+  width: 100%;
+  background-color: #f5f5f5 ;
+  padding-top: 50px;
+}
+.Home-feedback-one{
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+.Home-feedback-two{
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+.Home-feedback-box{
+  width: 50%;
+  padding: 60px;
+  border: 5px solid #FFB600;
+}
+.Home-feedback-paragraph{
+  line-height: 20px;
+}
+.Home-feedback-star{
+  color: #FFB600;
+}
+.Home-feedback-img{
+  border-radius: 120px;
+  width: 120px;
+}
+.Home-feedback-name{
+  display: flex;
+  margin: 20px;
+}
+
+.Home-feedback-input{
+  height: 50px;
+  width: 90%;
+}
+.Home-feedback-firstname{
+  padding: 10px;
+  width: 90%;
+}
+
+.Home-feedback-message{
+  width: 100%;
+  margin-top: 20px;
+ 
+}
+.Home-feedback-button-container{
+  margin: 20px;
+}
+.Home-feedback-button{
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right:40px ;
+  border-radius: 30px;
+  background-color: #FFB600;
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+}
+.Home-feedback-input-message{
+  width: 95%;
+  height: 80px;
+
+}
   @media screen and (max-width: 768px) {
+    .Home-feedback-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .Home-feedback-two,.Home-feedback-one{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .Home-feedback-box{
+      border: 5px solid #FFB600;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 90%;
+    }
+    .Home-workshop-new-heading{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+
+    }
+    .Home-Workshop-news-container{
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .Home-Workshop-news{
+     width: 100%;
+    }
+    .Home-workshop-img{
+      width: 300px;
+      height: 200px;
+    }
+    .Home-help-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .Home-help-one{
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+   .home-help-img{
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 400px;
+   }
+   .Home-help-icon{
+    display: flex;
+   }
+    .Home-service-black {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .Home-container-black-style{
+      width: 100%;
+    }
     .Home-header-text-bottom {
       padding-bottom: 60px;
     }
     .Home-Services-container  {
       flex-direction: column;
-      margin-top: 150px;
     }
   
     .Home-Services{
