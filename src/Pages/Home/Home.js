@@ -167,7 +167,7 @@ function Home() {
           <div className="Home-service-black">
             <HomeBlackBox
               className="Home-service-black1"
-              backgroundImg="assets/Decorating.jpg"
+              backgroundImg="assets/decorating.jpg"
               heading="Decorating"
               paragraph="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
             />
